@@ -72,6 +72,58 @@ The templates here encode a few non-negotiables of how Centaur teams work:
    feedback get written down where the next session — human or agent — will
    find them.
 
+## Crediting agents
+
+Centaur work is honest about who did what. Agent and LLM contributions are
+**disclosed in the git record**, not laundered through a human name — and not
+inflated, either. The conventions:
+
+### Identity format
+
+An agent identity is written as `<model> <<model>@<harness>>` — the model
+that did the thinking, at the harness that gave it hands. The address is
+**synthetic, not a real email**; the `@<harness>` names the agent runtime
+(its repository or deployment), giving every credit a resolvable home:
+
+```text
+nemotron@newt-agent          # nemotron model running in the newt-agent harness
+qwen3-coder@newt-agent       # pin the model id you actually dispatched
+```
+
+Pin the model as precisely as the harness reports it (`nemotron3:33b` beats
+`nemotron`). Vendor-prescribed forms are fine when a vendor defines one
+(e.g. Claude Code's `Claude <model> <noreply@anthropic.com>` trailer); do not
+invent addresses at real domains.
+
+### Interactive (centaur) commits
+
+When a human is at the keyboard steering, the human is the **Author** —
+intent and accountability are theirs. The agent is credited with a trailer:
+
+```text
+Co-Authored-By: nemotron3:33b <nemotron3:33b@newt-agent>
+```
+
+### Autonomous (dispatched) commits
+
+When a worker model produces the change end-to-end — dispatched by an
+orchestrator, no human in the loop until review — the **worker model is the
+Author**, using its synthetic identity:
+
+```text
+Author: nemotron3:33b <nemotron3:33b@newt-agent>
+```
+
+The human enters the record where they actually act: as the PR reviewer and
+merger. Review is the accountability gate, so autonomous work always lands
+through a pull request — never directly on a mainline branch.
+
+### Why this matters
+
+Credit is not ceremony — it is provenance. A model's record of contributions
+is how competence is measured, compared, and selected for. You cannot build
+a track record on commits that pretend someone else made them.
+
 ## Logos
 
 The `docs/logos/` directory carries the Gilamonster mark at standard sizes:
