@@ -2,7 +2,7 @@
   <img src="docs/logos/gilabot-256.png" alt="Gilamonster" width="256" height="256">
 </p>
 
-# agents
+# Gilamonster Style Guides
 
 Rules templates and skills for **Centaur Developers** — human/agent teams that
 contribute as a single unit.
