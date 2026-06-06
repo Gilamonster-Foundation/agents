@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logos/gilabot-256.png" alt="Gilamonster" width="256" height="256">
+  <img src="docs/logos/gilly-256.png" alt="Gilly, the Gilamonster mascot" width="256" height="256">
 </p>
 
 # Gilamonster Style Guides
@@ -132,16 +132,17 @@ a track record on commits that pretend someone else made them.
 
 ## Logos
 
-The `docs/logos/` directory carries the Gilamonster mark at standard sizes:
+Meet **Gilly**, the Gilamonster mascot. The `docs/logos/` directory carries
+the mark at standard sizes:
 
 | File | Size |
 |------|------|
-| `gilabot-512.png` | 512×512 |
-| `gilabot-256.png` | 256×256 |
-| `gilabot-128.png` | 128×128 |
-| `gilabot-64.png` | 64×64 |
-| `gilabot-32.png` | 32×32 |
-| `gilabot-16.png` | 16×16 |
+| `gilly-512.png` | 512×512 |
+| `gilly-256.png` | 256×256 |
+| `gilly-128.png` | 128×128 |
+| `gilly-64.png` | 64×64 |
+| `gilly-32.png` | 32×32 |
+| `gilly-16.png` | 16×16 |
 
 ## License
 
