@@ -71,6 +71,12 @@ The templates here encode a few non-negotiables of how Centaur teams work:
 5. **Context is preserved, not reconstructed.** Decisions, conventions, and
    feedback get written down where the next session — human or agent — will
    find them.
+6. **Every crate ships its own README, refreshed on every version bump.**
+   crates.io renders the crate README as its front page. A new crate lands
+   with a `README.md` in its crate root; a version bump includes a README
+   freshness review (a bump PR that leaves it untouched says why). A stale
+   README is an incomplete release, the same way a fix without a regression
+   test is an incomplete fix.
 
 ## Crediting agents
 
